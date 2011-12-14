@@ -1,4 +1,6 @@
 ResqueDemo::Application.routes.draw do
+  match 'eat/:food' => 'eat#food'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
