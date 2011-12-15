@@ -1,0 +1,2 @@
+module AtesHelper
+end

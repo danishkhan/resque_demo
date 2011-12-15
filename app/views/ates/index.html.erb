@@ -1,0 +1,23 @@
+<h1>Listing ates</h1>
+
+<table>
+  <tr>
+    <th>Food</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ates.each do |ate| %>
+  <tr>
+    <td><%= ate.food %></td>
+    <td><%= link_to 'Show', ate %></td>
+    <td><%= link_to 'Edit', edit_ate_path(ate) %></td>
+    <td><%= link_to 'Destroy', ate, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ate', new_ate_path %>
