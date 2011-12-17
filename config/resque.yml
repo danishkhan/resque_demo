@@ -1,2 +1,2 @@
 development: localhost:6379
-production: 10.168.78.158:6379
+production: redis.danishkhan.org:6379
